@@ -1,0 +1,113 @@
+.head-studio {
+    color: var(--secondary-title-color);
+  }
+  .header {
+    background-color: var(--header-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  .menu-list {
+    display: flex;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .mail-tel-list {
+    display: flex;
+    margin-left: auto;
+  }
+  .menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    position: relative;
+    transition: color var(--time) var(--cubic-bezier);
+    &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  }
+  .page-link {
+    color: var(--accent-color);
+  }
+  .menu-link.page-link::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    bottom: -32px;
+  }
+  .menu-link-color {
+    color: var(--secondary-title-color);
+  }
+  
+  .menu-item {
+    &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+  .header-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+    transition: color var(--time) var(--cubic-bezier);
+    &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  }
+ 
+  .header-mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    transition: color var(--time) var(--cubic-bezier);
+    &:hover,
+ &:focus {
+    color: var(--accent-color);
+  }
+  }
+  
+  .header-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: var(--primary-text-color);
+    transition: fill var(--time) var(--cubic-bezier);
+    .header-tel:hover &,
+    .header-tel:focus & {
+      fill: var(--accent-color);
+    }
+    .header-mail:hover &,
+  .header-mail:focus & {
+    fill: var(--accent-color);
+  }
+  }
+  
+  .header-logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    margin-right: 90px;
+  }
