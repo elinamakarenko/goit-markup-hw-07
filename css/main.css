@@ -402,10 +402,6 @@ body {
   transform: translateY(-50%);
 }
 
-.head-studio {
-  color: var(--secondary-title-color);
-}
-
 .header {
   background-color: var(--header-color);
   padding-top: 25px;
@@ -413,12 +409,26 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+.header__logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-right: 90px;
+}
+
+.header__logo--studio {
+  color: var(--secondary-title-color);
+}
+
 .header-container {
   display: flex;
   align-items: center;
 }
 
-.menu-list {
+.menu {
   display: flex;
 }
 
@@ -427,12 +437,12 @@ body {
   align-items: center;
 }
 
-.mail-tel-list {
+.contacts {
   display: flex;
   margin-left: auto;
 }
 
-.menu-link {
+.menu__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -441,15 +451,15 @@ body {
   transition: color var(--time) var(--cubic-bezier);
 }
 
-.menu-link:hover, .menu-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
-.page-link {
+.menu__page-link {
   color: var(--accent-color);
 }
 
-.menu-link.page-link::after {
+.menu__link.menu__page-link::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -460,15 +470,15 @@ body {
   bottom: -32px;
 }
 
-.menu-link-color {
+.menu__link--color {
   color: var(--secondary-title-color);
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-tel {
+.contacts__tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -479,11 +489,11 @@ body {
   transition: color var(--time) var(--cubic-bezier);
 }
 
-.header-tel:hover, .header-tel:focus {
+.contacts__tel:hover, .contacts__tel:focus {
   color: var(--accent-color);
 }
 
-.header-mail {
+.contacts__mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -495,35 +505,25 @@ body {
   transition: color var(--time) var(--cubic-bezier);
 }
 
-.header-mail:hover, .header-mail:focus {
+.contacts__mail:hover, .contacts__mail:focus {
   color: var(--accent-color);
 }
 
-.header-icon {
+.contacts__icon {
   margin-right: 10px;
   vertical-align: middle;
   fill: var(--primary-text-color);
   transition: fill var(--time) var(--cubic-bezier);
 }
 
-.header-tel:hover .header-icon,
-.header-tel:focus .header-icon {
+.contacts__tel:hover .contacts__icon,
+.contacts__tel:focus .contacts__icon {
   fill: var(--accent-color);
 }
 
-.header-mail:hover .header-icon,
-.header-mail:focus .header-icon {
+.contacts__mail:hover .contacts__icon,
+.contacts__mail:focus .contacts__icon {
   fill: var(--accent-color);
-}
-
-.header-logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-  margin-right: 90px;
 }
 
 .hero {
